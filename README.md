@@ -26,26 +26,27 @@ The Histogram of gray scale image and color image is shown.
 
 ## Program:
 ```python
-# Developed By: A.Anbuselvam
+# Developed By: Anbuselvam A
 # Register Number: 212222240009
 ```
-# Grayscale image and Color image
+## Output:
+### Input Grayscale Image and Color Image
 ```
 import cv2
 import matplotlib.pyplot as plt
-gray_image = cv2.imread("immg.jpeg")
-color_image = cv2.imread("img.jpeg",-1)
+gray_image = cv2.imread("i1")
+color_image = cv2.imread("i3",-1)
 cv2.imshow("Gray Image",gray_image)
 cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-# Histogram of Grayscale image and color image
+### Histogram of Grayscale Image and any channel of Color Image
 ```
 import numpy as np
 import cv2
-Gray_image = cv2.imread("immg.jpeg")
-Color_image = cv2.imread("img.jpeg")
+Gray_image = cv2.imread("i1")
+Color_image = cv2.imread("i3")
 import matplotlib.pyplot as plt
 gray_hist = cv2.calcHist([Gray_image],[0],None,[256],[0,256])
 color_hist = cv2.calcHist([Color_image],[0],None,[256],[0,256])
@@ -66,32 +67,35 @@ plt.stem(color_hist)
 plt.show()
 cv2.waitKey(0)
 ```
-# Histogram equalization of Grayscale image
+### Histogram Equalization of Grayscale Image.
 ```
 import cv2
-gray_image = cv2.imread("immg.jpeg",0)
+gray_image = cv2.imread("i1",0)
 cv2.imshow('Grey Scale Image',gray_image)
 equ = cv2.equalizeHist(gray_image)
 cv2.imshow("Equalized Image",equ)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
-
-## Output:
 ### Input Grayscale Image and Color Image
+<img src="https://github.com/SriramS22/Histogram-of-an-images/assets/119094390/3a270119-bcd5-47a5-8463-3e6cca2c25a1" width=450 height=450>
 
-![Screenshot 2024-03-10 192938](https://github.com/premalatha-sureshbabu/Histogram-of-an-images/assets/120620842/33ef503c-2ac2-4837-b296-4116f8f803d9)
+<img src="https://github.com/SriramS22/Histogram-of-an-images/assets/119094390/79b003ca-818e-4c33-acf4-97fa65f6b826" width=450 height=450>
 
 ### Histogram of Grayscale Image and any channel of Color Image
 
-![Screenshot 2024-03-12 102721](https://github.com/premalatha-sureshbabu/Histogram-of-an-images/assets/120620842/8af5eb58-65ab-46b2-845e-36be7f8cd901)
+<img src="https://github.com/SriramS22/Histogram-of-an-images/assets/119094390/1e2cc124-3ff6-46c9-8351-80af53aa3b47" width=450 height=450>
 
-![Screenshot 2024-03-12 102740](https://github.com/premalatha-sureshbabu/Histogram-of-an-images/assets/120620842/902d045a-a3dc-4d75-9f1c-2059cac663b8)
+<img src="https://github.com/SriramS22/Histogram-of-an-images/assets/119094390/4149fade-d963-499a-86fc-afe1c61352b7" width=450 height=450>
 
+<img src="https://github.com/SriramS22/Histogram-of-an-images/assets/119094390/283beae4-da4e-45af-8a86-4f926f20c6f5" width=450 height=450>
+
+<img src="https://github.com/SriramS22/Histogram-of-an-images/assets/119094390/41a8b9da-6e55-4f99-abc0-608512a8ebed" width=450 height=450>
 
 ### Histogram Equalization of Grayscale Image.
+<img src="https://github.com/SriramS22/Histogram-of-an-images/assets/119094390/221a29d2-2066-43ca-9e73-edad600ae515" width=450 height=450>
 
-![Screenshot 2024-03-12 102434](https://github.com/premalatha-sureshbabu/Histogram-of-an-images/assets/120620842/bf7aafa7-d9b9-4f86-9926-9ef6c9d15c78)
+<img src="https://github.com/SriramS22/Histogram-of-an-images/assets/119094390/40ed9b0d-18a6-4eff-8fad-cd82c45b6de0" width=450 height=450>
 
 
 ## Result: 
